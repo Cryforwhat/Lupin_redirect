@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>리디렉션 페이지</title>
+		<style>
+			body {
+				padding-top: 20%;
+				background-color: #f2f2f2;
+				font-family: Arial, sans-serif;
+				text-align: center;
+			}
+
+			h1 {
+				color: #333;
+			}
+
+			p {
+				color: #777;
+			}
+
+			.button {
+				display: inline-block;
+				padding: 10px 20px;
+				background-color: cornflowerblue;
+				color: #fff;
+				font-size: 16px;
+				border: none;
+				cursor: pointer;
+				border-radius: 4px;
+				transition: background-color 0.3s ease;
+			}
+
+			.button:hover {
+				background-color: #7bbdf4;
+			}
+		</style>
+		<script>
+			function redirectToRandomWebsite() {
+				var randomNumber = Math.random();
+
+				if (randomNumber < 0.5) {
+					window.location.href = "http://www.youtube.com";
+				} else {
+					window.location.href = "http://google.com";
+				}
+			}
+		</script>
+	</head>
+	<body>
+		<h1>Click the Button to Participate!</h1>
+
+		<button class="button" onclick="redirectToRandomWebsite()">Start!</button>
+	</body>
+</html>
